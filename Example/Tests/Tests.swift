@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import guizion-card-view
+import guizion_card_view
 
 class Tests: XCTestCase {
     

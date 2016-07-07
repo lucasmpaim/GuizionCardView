@@ -1,0 +1,16 @@
+PODS:
+  - guizion-card-view (0.1.0)
+
+DEPENDENCIES:
+  - guizion-card-view (from `../`)
+
+EXTERNAL SOURCES:
+  guizion-card-view:
+    :path: ../
+
+SPEC CHECKSUMS:
+  guizion-card-view: 53cd7d96e2463dd3f4749cdc7a52d078dd213fa5
+
+PODFILE CHECKSUM: dab827ffd53ba3c12e97aa8de395424f640596cc
+
+COCOAPODS: 1.0.1

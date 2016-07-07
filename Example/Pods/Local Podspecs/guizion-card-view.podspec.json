@@ -1,0 +1,22 @@
+{
+  "name": "guizion-card-view",
+  "version": "0.1.0",
+  "summary": "A short description of guizion-card-view.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/guizion-card-view",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Lucas": "lucasmpaim1@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/guizion-card-view.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "guizion-card-view/Classes/**/*"
+}
