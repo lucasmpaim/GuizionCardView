@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'guizion-card-view_Example' do
+  pod 'guizion-card-view', :path => '../'
+
+  target 'guizion-card-view_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
