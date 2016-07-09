@@ -18,5 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "guizion-card-view/Classes/**/*"
+  "source_files": "guizion-card-view/Classes/**/*.{c,h,hh,m,mm,swift}",
+  "resource_bundles": {
+    "GuizionCardViewBundle": [
+      "guizion-card-view/Assets/Images.xcassets",
+      "guizion-card-view/Support\\ Files/*.plist"
+    ]
+  }
 }

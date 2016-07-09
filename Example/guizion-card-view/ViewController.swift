@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import guizion_card_view
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var cardView: CardView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(ViewController.setCreditCardNumber), userInfo: nil, repeats: false)
+        
+    }
+    
+    func setCreditCardNumber() {
+        cardView.updateNumber("5374267567425782")
     }
 
     override func didReceiveMemoryWarning() {

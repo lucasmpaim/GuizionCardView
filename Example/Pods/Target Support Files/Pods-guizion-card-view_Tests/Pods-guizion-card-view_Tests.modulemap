@@ -1,0 +1,6 @@
+framework module Pods_guizion_card_view_Tests {
+  umbrella header "Pods-guizion-card-view_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

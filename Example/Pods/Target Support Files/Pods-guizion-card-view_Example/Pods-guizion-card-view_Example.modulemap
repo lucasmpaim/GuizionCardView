@@ -1,0 +1,6 @@
+framework module Pods_guizion_card_view_Example {
+  umbrella header "Pods-guizion-card-view_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

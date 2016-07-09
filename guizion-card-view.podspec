@@ -30,11 +30,12 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'guizion-card-view/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'guizion-card-view' => ['guizion-card-view/Assets/*.png']
-  # }
+  # s.source_files = 'guizion-card-view/Classes/**/*'
+  s.source_files = 'guizion-card-view/Classes/**/*.{c,h,hh,m,mm,swift}'  
+
+  s.resource_bundles = {
+     'GuizionCardViewBundle' => ['guizion-card-view/Assets/Images.xcassets', 'guizion-card-view/Support\ Files/*.plist']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

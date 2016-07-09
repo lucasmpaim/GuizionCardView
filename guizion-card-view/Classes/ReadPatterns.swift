@@ -15,7 +15,10 @@ class CardNumberFormatter {
     var cachedCard: CreditCard?
     
     init() {
-        let filePath = NSBundle.mainBundle().pathForResource("CardPatterns", ofType: "plist")
+        
+        let podBundle = NSBundle(forClass: CardNumberFormatter.self)
+        let filePath = podBundle.pathForResource("CardPatterns", ofType: "plist")
+        
         guard let array = NSArray(contentsOfFile: filePath!) else {fatalError("CardPatterns.plist is missing!")}
         
         for cardData in array {
@@ -30,11 +33,11 @@ class CardNumberFormatter {
         return numberOfMatches > 0
     }
 
-    func verifyPattern (number: String) -> CreditCard? {
+    func verifyPattern (number: String) -> CreditCard {
         
         if(cachedCard != nil) {
             if(patternMatchesWithNumberString(number, pattern: cachedCard!.card!.pattern!)) {
-                return cachedCard
+                return cachedCard!
             } else {
                 cachedCard = nil
             }
@@ -44,7 +47,7 @@ class CardNumberFormatter {
         
             if patternMatchesWithNumberString(number, pattern: card.pattern!) {
                 cachedCard = CreditCard(type: type, card: card)
-                return cachedCard
+                return cachedCard!
             }
         }
         

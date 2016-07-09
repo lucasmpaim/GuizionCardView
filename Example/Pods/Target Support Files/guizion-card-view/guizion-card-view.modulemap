@@ -1,0 +1,6 @@
+framework module guizion_card_view {
+  umbrella header "guizion-card-view-umbrella.h"
+
+  export *
+  module * { export * }
+}
