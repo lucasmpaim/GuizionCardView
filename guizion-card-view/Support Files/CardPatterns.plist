@@ -17,6 +17,14 @@
 		<string>4,6,4</string>
 		<key>companyName</key>
 		<string>Diners Club</string>
+        <key>numberColor</key>
+        <string>#D7D7D7</string>
+        <key>nameColor</key>
+        <string>#D4D4D4</string>
+        <key>expirationColor</key>
+        <string>#D4D4D4</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 	<dict>
 		<key>length</key>
@@ -33,6 +41,14 @@
         <string>notrecognized_front</string>
         <key>imageBack</key>
         <string>notrecognized_back</string>
+        <key>numberColor</key>
+        <string>#434343</string>
+        <key>nameColor</key>
+        <string>#656565</string>
+        <key>expirationColor</key>
+        <string>#656565</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 	<dict>
 		<key>length</key>
@@ -49,6 +65,14 @@
         <string>americanexpress_front</string>
         <key>imageBack</key>
         <string>americanexpress_back</string>
+        <key>numberColor</key>
+        <string>#D7D7D7</string>
+        <key>nameColor</key>
+        <string>#D4D4D4</string>
+        <key>expirationColor</key>
+        <string>#D4D4D4</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 	<dict>
 		<key>length</key>
@@ -65,6 +89,14 @@
         <string>notrecognized_front</string>
         <key>imageBack</key>
         <string>notrecognized_back</string>
+        <key>numberColor</key>
+        <string>#434343</string>
+        <key>nameColor</key>
+        <string>#656565</string>
+        <key>expirationColor</key>
+        <string>#656565</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 	<dict>
 		<key>length</key>
@@ -81,6 +113,14 @@
         <string>visa_front</string>
         <key>imageBack</key>
         <string>visa_back</string>
+        <key>numberColor</key>
+        <string>#D7D7D7</string>
+        <key>nameColor</key>
+        <string>#D4D4D4</string>
+        <key>expirationColor</key>
+        <string>#D4D4D4</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 	<dict>
 		<key>length</key>
@@ -97,6 +137,14 @@
         <string>notrecognized_front</string>
         <key>imageBack</key>
         <string>notrecognized_back</string>
+        <key>numberColor</key>
+        <string>#434343</string>
+        <key>nameColor</key>
+        <string>#656565</string>
+        <key>expirationColor</key>
+        <string>#656565</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 	<dict>
 		<key>length</key>
@@ -113,6 +161,14 @@
         <string>mastercard_front</string>
         <key>imageBack</key>
         <string>mastercard_back</string>
+        <key>numberColor</key>
+        <string>#434343</string>
+        <key>nameColor</key>
+        <string>#656565</string>
+        <key>expirationColor</key>
+        <string>#656565</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 	<dict>
 		<key>length</key>
@@ -129,6 +185,14 @@
         <string>mastercard_front</string>
         <key>imageBack</key>
         <string>mastercard_back</string>
+        <key>numberColor</key>
+        <string>#434343</string>
+        <key>nameColor</key>
+        <string>#656565</string>
+        <key>expirationColor</key>
+        <string>#656565</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 	<dict>
 		<key>length</key>
@@ -145,6 +209,14 @@
         <string>notrecognized_front</string>
         <key>imageBack</key>
         <string>notrecognized_back</string>
+        <key>numberColor</key>
+        <string>#434343</string>
+        <key>nameColor</key>
+        <string>#656565</string>
+        <key>expirationColor</key>
+        <string>#656565</string>
+        <key>ccvColor</key>
+        <string>#4B4B4B</string>
 	</dict>
 </array>
 </plist>

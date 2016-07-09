@@ -34,10 +34,11 @@ TODO: Add long description of the pod here.
   s.source_files = 'guizion-card-view/Classes/**/*.{c,h,hh,m,mm,swift}'  
 
   s.resource_bundles = {
-     'GuizionCardViewBundle' => ['guizion-card-view/Assets/Images.xcassets', 'guizion-card-view/Support\ Files/*.plist']
+     'GuizionCardViewBundle' => ['guizion-card-view/Assets/*', 'guizion-card-view/Support\ Files/*.plist']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'UIColor_Hex_Swift', '~> 2.1'
+
 end

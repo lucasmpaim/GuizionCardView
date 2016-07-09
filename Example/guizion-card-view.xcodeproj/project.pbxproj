@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		85AD224B2FA0252EE6D3645A /* Pods_guizion_card_view_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682BD1ECC23D45AE564BA21 /* Pods_guizion_card_view_Tests.framework */; };
 		E9F78D9DF1846D30F9C36D7C /* Pods_guizion_card_view_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807A60A1D30D0D4A010CE068 /* Pods_guizion_card_view_Example.framework */; };
+		F208DC041D31998100E1941A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		F208DC061D3199D700E1941A /* data-latin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F208DC051D3199D700E1941A /* data-latin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		84698EB1908EA8A1B96A573A /* Pods-guizion-card-view_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guizion-card-view_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-guizion-card-view_Example/Pods-guizion-card-view_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8682BD1ECC23D45AE564BA21 /* Pods_guizion_card_view_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guizion_card_view_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		875384341851EAFFFA5A980D /* guizion-card-view.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "guizion-card-view.podspec"; path = "../guizion-card-view.podspec"; sourceTree = "<group>"; };
+		F208DC051D3199D700E1941A /* data-latin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "data-latin.ttf"; sourceTree = "<group>"; };
 		F7D888BC1D2EEB9400308444 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = SOURCE_ROOT; };
 		FA99225B7CF763A42611B4AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 		607FACD21AFB9204008FA782 /* Example for guizion-card-view */ = {
 			isa = PBXGroup;
 			children = (
+				F208DC051D3199D700E1941A /* data-latin.ttf */,
 				F7D888BC1D2EEB9400308444 /* MyPlayground.playground */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -248,7 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				F208DC041D31998100E1941A /* Main.storyboard in Resources */,
+				F208DC061D3199D700E1941A /* data-latin.ttf in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

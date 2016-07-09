@@ -7,98 +7,139 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D7726355219691E3E51B025F2A51862 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF596E4047AE4D625C0C87BC50FFF0F /* Images.xcassets */; };
-		28F3BCCA5BE5E46711A0A79F78BA8760 /* ReadPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206B08BB4DFB5342C6C8EFE51EB287E /* ReadPatterns.swift */; };
-		296FE23D04D9BD9E7B8E6C1D8E7B26D0 /* guizion-card-view-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B609A77FD76AD35678889485DC5AA /* guizion-card-view-dummy.m */; };
-		2DB4768EDAAAAC9FF3B8E89F038F082A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		4CF693F88877842C765735011046DAE0 /* guizion-card-view-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3B3FE402AB5CECE3D8B740916C4EB2 /* guizion-card-view-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74C892FD7665B34CF2676711ED0A544B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4F4DFA4C5545DFC905AF77BE1BBD9 /* Extensions.swift */; };
-		856D1ECC2DC21F2836E74DA95395A94E /* Pods-guizion-card-view_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D82439F110415A0BECADD6F8A32948 /* Pods-guizion-card-view_Example-dummy.m */; };
-		867EBDC30942227654B1A05B84100698 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507F395DEE5ACB57F790717071A60035 /* CardView.swift */; };
-		8EE1DE43BCA767718B2633402C87F781 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE84E7F76E799D07D6F22BCA1C7408 /* Cards.swift */; };
-		A323A45B3ECE620D336F26B20E237158 /* GuizionCardViewBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F073D92C3C50946A19D87857ED8502C /* GuizionCardViewBundle.bundle */; };
-		AF8C964E6B51D04000EEE5D96A7041D4 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01557A82476783006A432B2F34D01E10 /* Exceptions.swift */; };
-		BE3160CEF3915D78B382BFFF026A9706 /* CardPatterns.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D553B0F2136C62DFDBE440658E4FC5C /* CardPatterns.plist */; };
-		C2DC5408F5F0548C6C6E3D31FA26BAFA /* Pods-guizion-card-view_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 424098356A7158A4E0F1A2A8B1FB9557 /* Pods-guizion-card-view_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003CBC20360CC70063FB22BDC007953B /* GuizionCardViewBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07D9E35CD1018D42D501299C19D60447 /* GuizionCardViewBundle.bundle */; };
+		1B561227F0F2E115DDC254A4E0138473 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 759AD8B2908964E8797892648D01A0BD /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2721AD9AF467A99ADCF8048ADD839B66 /* Pods-guizion-card-view_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 424098356A7158A4E0F1A2A8B1FB9557 /* Pods-guizion-card-view_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2980BC600A56DAF835E809175C3EBC2A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A10080D2B823A0B9753DE7A4EE55FA9 /* Extensions.swift */; };
+		2DB4768EDAAAAC9FF3B8E89F038F082A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6709D010ACD0F3F9EDCB9994375F9CAB /* Foundation.framework */; };
+		30B03C91F3C248F4CEF624795060DC74 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3EB858E19DAC0126375ED8F03B23D /* CardView.swift */; };
+		379A03DA9FEADE56D8191D5E8CFB2776 /* data-latin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4796A1EF1ACEA66C31333011E0A5DA39 /* data-latin.ttf */; };
+		4365E55B7263F771ABE91FFDD307049D /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 30BA359972AB40D946A6F5CFEDB8DFC3 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D068D3E43382A5C941A33A2E3012BE7 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757DF47BECE6025FE55914837D8FD5ED /* Cards.swift */; };
+		66D7D866B21B54EAEE6FD0503C16A564 /* FrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6F5554E0D82010802C857BA9354FD /* FrontView.swift */; };
+		6BB9DD10EBC395BB29E8AC28EE4EBABE /* guizion-card-view-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B609A77FD76AD35678889485DC5AA /* guizion-card-view-dummy.m */; };
+		6C4E5286431950A021A10D054E601644 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6709D010ACD0F3F9EDCB9994375F9CAB /* Foundation.framework */; };
+		6F31FC13229288722A6361AB4496028C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6709D010ACD0F3F9EDCB9994375F9CAB /* Foundation.framework */; };
+		759CAFF651C5D61D1D2275F4382FFA87 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A2064E26DEF01C066D89FF1A865EAF /* UIColor_Hex_Swift-dummy.m */; };
+		89E0D96288FD6D7816AFC8BA273CB7AE /* CardPatterns.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90CE5BB1BAD80E9081F4E7DF53E5978F /* CardPatterns.plist */; };
+		8DD662C39DB8FAC9809941B820AE7545 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450E7849FFDD339C54310437E1EF0A9 /* UIColorExtension.swift */; };
+		9BA5769F73872F305016DFD4337E012D /* ReadPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8B829C84192461E01BFC43EE68188 /* ReadPatterns.swift */; };
+		A3254301B95D38B73175B14328ED3416 /* Pods-guizion-card-view_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D82439F110415A0BECADD6F8A32948 /* Pods-guizion-card-view_Example-dummy.m */; };
+		B797A9A0FFB2CADE2CF3D5B20BF44639 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF11741955DC61136A0066123206396 /* Images.xcassets */; };
+		BCF096C547AF23A7D27322EAF0B62486 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CD75EC632696509FE1D805B714A56 /* BackView.swift */; };
+		C37B0718BC5823814131E746B3089A1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6709D010ACD0F3F9EDCB9994375F9CAB /* Foundation.framework */; };
+		C6524AC12A74576B1BA998D3D888B5A9 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D921959B435A11C9B017EF092ADA0 /* Exceptions.swift */; };
+		CC5EAB255E9F39368868ED22435B74F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328EACF3C8EFAFFBC0270B96899435F8 /* Constants.swift */; };
+		D3196142E88D95DDCC4DD5B687BFFCD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9A09535349A3EBCC445B3E54D0218F /* UIKit.framework */; };
+		D4724C6D1D70F154F00DCDCCC56855CD /* guizion-card-view-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3B3FE402AB5CECE3D8B740916C4EB2 /* guizion-card-view-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA9223BC70DFDB26BE790221ED234A29 /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7718B32BFBDE57CE0537DD8D322FF4E /* UIColor_Hex_Swift.framework */; };
 		E2E0D1BEA2837231A35B245D66EFE19A /* Pods-guizion-card-view_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E03134C77EE8C3224800224AB082F28 /* Pods-guizion-card-view_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F18A50B355C15B27313E7505828E7B2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		F62550B243204E64648A0140F9925E1E /* Pods-guizion-card-view_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5554ED5EC7FB5C7603A915059537B97 /* Pods-guizion-card-view_Tests-dummy.m */; };
-		FC2237AA731D4B74B2410A56324EF2B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C815D7DD2F5EBA77652576EAB47C9A0 /* PBXContainerItemProxy */ = {
+		7334E7DD5C77C1C6E15D5EAA4E03186C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4091593FBE3EC6E12E727F89EBEE0245;
+			remoteGlobalIDString = 2409A6360792722EFA2C83688DD4B220;
 			remoteInfo = "guizion-card-view";
 		};
-		7FDF93E79BB4CF91DEDD7FBE3907FC45 /* PBXContainerItemProxy */ = {
+		74EF0D1FE74642342B291A3DB541C325 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5E9E3845717B2797D0F6CC0E491ABEAB;
+			remoteGlobalIDString = 58015F2F5BA16A21A3CDCF2991527261;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		7E95ACEDC11152F36F78B7E7C6E5D653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58015F2F5BA16A21A3CDCF2991527261;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		DB2AAD32A37BF3667CC2BEEB78492521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E095E0CBFE9E6A3A4FB6157F29ABB2DC;
 			remoteInfo = "guizion-card-view-GuizionCardViewBundle";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01557A82476783006A432B2F34D01E10 /* Exceptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
 		04433F671950190DB884D41A5AB6D98A /* ResourceBundle-GuizionCardViewBundle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GuizionCardViewBundle-Info.plist"; sourceTree = "<group>"; };
+		07D9E35CD1018D42D501299C19D60447 /* GuizionCardViewBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuizionCardViewBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D82439F110415A0BECADD6F8A32948 /* Pods-guizion-card-view_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-guizion-card-view_Example-dummy.m"; sourceTree = "<group>"; };
 		0A699D89334383AF8221522B752321B3 /* Pods-guizion-card-view_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-guizion-card-view_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0E03134C77EE8C3224800224AB082F28 /* Pods-guizion-card-view_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-guizion-card-view_Tests-umbrella.h"; sourceTree = "<group>"; };
 		16F3E773F93B8BD2075F1CA0FDB29250 /* Pods-guizion-card-view_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-guizion-card-view_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		174D921959B435A11C9B017EF092ADA0 /* Exceptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
 		1828A2F275BD9D9CA2E364AB2BCF1483 /* Pods-guizion-card-view_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-guizion-card-view_Example-resources.sh"; sourceTree = "<group>"; };
 		1B6B609A77FD76AD35678889485DC5AA /* guizion-card-view-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "guizion-card-view-dummy.m"; sourceTree = "<group>"; };
-		2E264CC7B1949D047940FD79BDE1077B /* guizion_card_view.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = guizion_card_view.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3206B08BB4DFB5342C6C8EFE51EB287E /* ReadPatterns.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadPatterns.swift; sourceTree = "<group>"; };
+		30BA359972AB40D946A6F5CFEDB8DFC3 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		328EACF3C8EFAFFBC0270B96899435F8 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		365B608644B5724D6C0DCE3B1D177400 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
 		3B4B8DD94DF729D72999021D237C0B39 /* Pods-guizion-card-view_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-guizion-card-view_Tests-resources.sh"; sourceTree = "<group>"; };
 		424098356A7158A4E0F1A2A8B1FB9557 /* Pods-guizion-card-view_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-guizion-card-view_Example-umbrella.h"; sourceTree = "<group>"; };
-		45C8F3309DC02A72B0788F7B2460261F /* Pods_guizion_card_view_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guizion_card_view_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		507F395DEE5ACB57F790717071A60035 /* CardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4796A1EF1ACEA66C31333011E0A5DA39 /* data-latin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "data-latin.ttf"; sourceTree = "<group>"; };
+		4CF11741955DC61136A0066123206396 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5814FC68D4B4058C1CCAA5B816D8DA10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F077617249C1462E14E4F424559A66 /* Pods-guizion-card-view_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-guizion-card-view_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5A10080D2B823A0B9753DE7A4EE55FA9 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5CF6AEDDB6BE3D0561D756ECBA40CB55 /* Pods-guizion-card-view_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-guizion-card-view_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5E998559D2B187094F8B0853A68DC328 /* Pods-guizion-card-view_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-guizion-card-view_Example-frameworks.sh"; sourceTree = "<group>"; };
+		61214965897FABFFFF50B2BEF49AB33D /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6709D010ACD0F3F9EDCB9994375F9CAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6CED2C19A298C6DC242117A60611EA93 /* guizion-card-view.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "guizion-card-view.xcconfig"; sourceTree = "<group>"; };
+		6D9A09535349A3EBCC445B3E54D0218F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7554605D3B1AD5F38D2E3F2844F5DF92 /* Pods-guizion-card-view_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-guizion-card-view_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		757DF47BECE6025FE55914837D8FD5ED /* Cards.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		759AD8B2908964E8797892648D01A0BD /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		7A9CD75EC632696509FE1D805B714A56 /* BackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 		7AE25501AA6550AB575BFAFC0F0C82E1 /* guizion-card-view-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "guizion-card-view-prefix.pch"; sourceTree = "<group>"; };
-		7F073D92C3C50946A19D87857ED8502C /* GuizionCardViewBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuizionCardViewBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EF596E4047AE4D625C0C87BC50FFF0F /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85574FBBBFA1737448B5B37D81174B89 /* guizion_card_view.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = guizion_card_view.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		861F56111AA72C4BEBFA69EB6788D563 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		90CE5BB1BAD80E9081F4E7DF53E5978F /* CardPatterns.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = CardPatterns.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940789A1027D567B3397D755EEF47CF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94F8E26F6A0F39E6E4D4A061A6AE4853 /* Pods-guizion-card-view_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-guizion-card-view_Tests.modulemap"; sourceTree = "<group>"; };
 		963E5779062D4C4FE3B83E865BCEEAC4 /* Pods-guizion-card-view_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-guizion-card-view_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D553B0F2136C62DFDBE440658E4FC5C /* CardPatterns.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = CardPatterns.plist; sourceTree = "<group>"; };
 		9DAE6B5B316B1806CA71D55E6F24ED58 /* Pods-guizion-card-view_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-guizion-card-view_Example.modulemap"; sourceTree = "<group>"; };
+		A0D6F5554E0D82010802C857BA9354FD /* FrontView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FrontView.swift; sourceTree = "<group>"; };
+		A450E7849FFDD339C54310437E1EF0A9 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
 		A6B1ED1BBBB3E667188314F386B685DD /* Pods-guizion-card-view_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-guizion-card-view_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A719BE8E73A450C40A15FECDAC36796D /* Pods_guizion_card_view_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guizion_card_view_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAA896F6E2A2790F00DB26CC2501562 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A2064E26DEF01C066D89FF1A865EAF /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
 		B5554ED5EC7FB5C7603A915059537B97 /* Pods-guizion-card-view_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-guizion-card-view_Tests-dummy.m"; sourceTree = "<group>"; };
 		BE3B3FE402AB5CECE3D8B740916C4EB2 /* guizion-card-view-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "guizion-card-view-umbrella.h"; sourceTree = "<group>"; };
-		C2F4F4DFA4C5545DFC905AF77BE1BBD9 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C3E3EB858E19DAC0126375ED8F03B23D /* CardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CD7FF031E51E6E33843494D561B05506 /* Pods-guizion-card-view_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-guizion-card-view_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EECE84E7F76E799D07D6F22BCA1C7408 /* Cards.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		CE7DCEDCE325198A4B1874AAD4D58E27 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		D72CA9C5C744E0993EDAF375E2D5F4A9 /* Pods_guizion_card_view_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guizion_card_view_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F8B829C84192461E01BFC43EE68188 /* ReadPatterns.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadPatterns.swift; sourceTree = "<group>"; };
+		E7718B32BFBDE57CE0537DD8D322FF4E /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3B7052BD3F2748DE8A827EA5A6212C /* Pods_guizion_card_view_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guizion_card_view_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD61F1D0D3C1DADAC067320DE74A048 /* guizion-card-view.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "guizion-card-view.modulemap"; sourceTree = "<group>"; };
 		FE4A0BC6CC7720E4E9B9132A0B1C9457 /* Pods-guizion-card-view_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-guizion-card-view_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FFEDDF274911886BB87DBE335387A97C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21BD4C4771C2B9D8961A50D7AD9F554B /* Frameworks */ = {
+		078642470F75A89099A817DAC279026C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC2237AA731D4B74B2410A56324EF2B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		494265F8279F479C1BC1CE9FFB1FB1DF /* Frameworks */ = {
+		558D3AECA3C274B95083FCEF61811FD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C4E5286431950A021A10D054E601644 /* Foundation.framework in Frameworks */,
+				DA9223BC70DFDB26BE790221ED234A29 /* UIColor_Hex_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,23 +151,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFB00D19510CB5B2B213F248E59F9EB1 /* Frameworks */ = {
+		8E4F82EB4D41EF631268612AC1FCAF1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18A50B355C15B27313E7505828E7B2E /* Foundation.framework in Frameworks */,
+				C37B0718BC5823814131E746B3089A1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B87E71ED54F139646D3491ECE23865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F31FC13229288722A6361AB4496028C /* Foundation.framework in Frameworks */,
+				D3196142E88D95DDCC4DD5B687BFFCD0 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B104FA5F44014AB4C5DBA0E1BE32117 /* guizion-card-view */ = {
+		08B52E45137E25432D448D300C3596E2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				82D9F36A57DB16E861C3A6CA1E561B53 /* Classes */,
+				60A1208F36961BE3D8DAB1BA9998E18B /* UIColor_Hex_Swift */,
 			);
-			path = "guizion-card-view";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0C097DCFCBB7AD7793735DEE275A3B94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85574FBBBFA1737448B5B37D81174B89 /* guizion_card_view.framework */,
+				07D9E35CD1018D42D501299C19D60447 /* GuizionCardViewBundle.bundle */,
+				ED3B7052BD3F2748DE8A827EA5A6212C /* Pods_guizion_card_view_Example.framework */,
+				D72CA9C5C744E0993EDAF375E2D5F4A9 /* Pods_guizion_card_view_Tests.framework */,
+				61214965897FABFFFF50B2BEF49AB33D /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		0D4ACEA8C7DC908D93B033F95F04BDDB /* Development Pods */ = {
@@ -137,23 +199,29 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		279291CC5D573E9B38E082145FD42580 /* Products */ = {
+		0E31BADC20273B1F3E3150FC6FC9F091 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E264CC7B1949D047940FD79BDE1077B /* guizion_card_view.framework */,
-				7F073D92C3C50946A19D87857ED8502C /* GuizionCardViewBundle.bundle */,
-				A719BE8E73A450C40A15FECDAC36796D /* Pods_guizion_card_view_Example.framework */,
-				45C8F3309DC02A72B0788F7B2460261F /* Pods_guizion_card_view_Tests.framework */,
+				90CE5BB1BAD80E9081F4E7DF53E5978F /* CardPatterns.plist */,
 			);
-			name = Products;
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		315E0F957B0BB11C747979EADEFC3886 /* guizion-card-view */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				7759083D4C0BF3FC495B0BCEC4DF0338 /* Classes */,
 			);
-			name = iOS;
+			path = "guizion-card-view";
+			sourceTree = "<group>";
+		};
+		408F33A6D059345753AC49E1EB2C852B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4796A1EF1ACEA66C31333011E0A5DA39 /* data-latin.ttf */,
+				4CF11741955DC61136A0066123206396 /* Images.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		45F05A8AC41AB50504C696D174029B71 /* Pods-guizion-card-view_Example */ = {
@@ -174,12 +242,56 @@
 			path = "Target Support Files/Pods-guizion-card-view_Example";
 			sourceTree = "<group>";
 		};
-		5402E0F01444A5B7E270279BDE14F401 /* Support Files */ = {
+		60A1208F36961BE3D8DAB1BA9998E18B /* UIColor_Hex_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				9D553B0F2136C62DFDBE440658E4FC5C /* CardPatterns.plist */,
+				30BA359972AB40D946A6F5CFEDB8DFC3 /* HEXColor.h */,
+				A450E7849FFDD339C54310437E1EF0A9 /* UIColorExtension.swift */,
+				B669B778C02EADD56FD6A382A41DD945 /* Support Files */,
 			);
-			path = "Support Files";
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+		68E6BE52241086F1AD92CFE01273980B /* guizion-card-view */ = {
+			isa = PBXGroup;
+			children = (
+				408F33A6D059345753AC49E1EB2C852B /* Assets */,
+				0E31BADC20273B1F3E3150FC6FC9F091 /* Support Files */,
+			);
+			path = "guizion-card-view";
+			sourceTree = "<group>";
+		};
+		766D43D826C721769A70089F945C0DFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7718B32BFBDE57CE0537DD8D322FF4E /* UIColor_Hex_Swift.framework */,
+				77F5169C7E9ACB54CFF9E155EC957809 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7759083D4C0BF3FC495B0BCEC4DF0338 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7A9CD75EC632696509FE1D805B714A56 /* BackView.swift */,
+				757DF47BECE6025FE55914837D8FD5ED /* Cards.swift */,
+				C3E3EB858E19DAC0126375ED8F03B23D /* CardView.swift */,
+				328EACF3C8EFAFFBC0270B96899435F8 /* Constants.swift */,
+				174D921959B435A11C9B017EF092ADA0 /* Exceptions.swift */,
+				5A10080D2B823A0B9753DE7A4EE55FA9 /* Extensions.swift */,
+				A0D6F5554E0D82010802C857BA9354FD /* FrontView.swift */,
+				E0F8B829C84192461E01BFC43EE68188 /* ReadPatterns.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		77F5169C7E9ACB54CFF9E155EC957809 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6709D010ACD0F3F9EDCB9994375F9CAB /* Foundation.framework */,
+				6D9A09535349A3EBCC445B3E54D0218F /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -187,22 +299,11 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0D4ACEA8C7DC908D93B033F95F04BDDB /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				279291CC5D573E9B38E082145FD42580 /* Products */,
+				766D43D826C721769A70089F945C0DFA /* Frameworks */,
+				08B52E45137E25432D448D300C3596E2 /* Pods */,
+				0C097DCFCBB7AD7793735DEE275A3B94 /* Products */,
 				A99B14164BAB149C4683236F4A73E38C /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		82D9F36A57DB16E861C3A6CA1E561B53 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EECE84E7F76E799D07D6F22BCA1C7408 /* Cards.swift */,
-				507F395DEE5ACB57F790717071A60035 /* CardView.swift */,
-				01557A82476783006A432B2F34D01E10 /* Exceptions.swift */,
-				C2F4F4DFA4C5545DFC905AF77BE1BBD9 /* Extensions.swift */,
-				3206B08BB4DFB5342C6C8EFE51EB287E /* ReadPatterns.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		886DF3CF0EA75804B4D376884C28EE4A /* Pods-guizion-card-view_Tests */ = {
@@ -221,14 +322,6 @@
 			);
 			name = "Pods-guizion-card-view_Tests";
 			path = "Target Support Files/Pods-guizion-card-view_Tests";
-			sourceTree = "<group>";
-		};
-		9509FFB8652C10AC2F35530D7E4A2365 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				8EF596E4047AE4D625C0C87BC50FFF0F /* Images.xcassets */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		A22ECC98638F80A63215508FF2D7BA99 /* Support Files */ = {
@@ -258,32 +351,29 @@
 		AD51BA7F132A249E5DDE2A43CCEF24C9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EF512BEC9E91753AA5BA5DA5D04A83BD /* guizion-card-view */,
+				68E6BE52241086F1AD92CFE01273980B /* guizion-card-view */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B669B778C02EADD56FD6A382A41DD945 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				FFEDDF274911886BB87DBE335387A97C /* Info.plist */,
+				365B608644B5724D6C0DCE3B1D177400 /* UIColor_Hex_Swift.modulemap */,
+				861F56111AA72C4BEBFA69EB6788D563 /* UIColor_Hex_Swift.xcconfig */,
+				B4A2064E26DEF01C066D89FF1A865EAF /* UIColor_Hex_Swift-dummy.m */,
+				CE7DCEDCE325198A4B1874AAD4D58E27 /* UIColor_Hex_Swift-prefix.pch */,
+				759AD8B2908964E8797892648D01A0BD /* UIColor_Hex_Swift-umbrella.h */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EF512BEC9E91753AA5BA5DA5D04A83BD /* guizion-card-view */ = {
-			isa = PBXGroup;
-			children = (
-				9509FFB8652C10AC2F35530D7E4A2365 /* Assets */,
-				5402E0F01444A5B7E270279BDE14F401 /* Support Files */,
-			);
-			path = "guizion-card-view";
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
 			sourceTree = "<group>";
 		};
 		FF62B210B701EE95D7F5252759628CAE /* guizion-card-view */ = {
 			isa = PBXGroup;
 			children = (
-				0B104FA5F44014AB4C5DBA0E1BE32117 /* guizion-card-view */,
+				315E0F957B0BB11C747979EADEFC3886 /* guizion-card-view */,
 				AD51BA7F132A249E5DDE2A43CCEF24C9 /* Resources */,
 				A22ECC98638F80A63215508FF2D7BA99 /* Support Files */,
 			);
@@ -294,11 +384,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		120923586BEBF2170EDF43329E496666 /* Headers */ = {
+		7A0E3F7E42C9073117FC5B142EE406F9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF693F88877842C765735011046DAE0 /* guizion-card-view-umbrella.h in Headers */,
+				D4724C6D1D70F154F00DCDCCC56855CD /* guizion-card-view-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,70 +400,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAFCF6DE9F3DB11B9D99076B3DA85C66 /* Headers */ = {
+		E3C011D5733752D9C0A412A95E04592F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DC5408F5F0548C6C6E3D31FA26BAFA /* Pods-guizion-card-view_Example-umbrella.h in Headers */,
+				2721AD9AF467A99ADCF8048ADD839B66 /* Pods-guizion-card-view_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6876F30BDFA87DAA8535E855E62E3A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4365E55B7263F771ABE91FFDD307049D /* HEXColor.h in Headers */,
+				1B561227F0F2E115DDC254A4E0138473 /* UIColor_Hex_Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		09484159E02C4DD8188B22F3414CBB47 /* Pods-guizion-card-view_Example */ = {
+		2409A6360792722EFA2C83688DD4B220 /* guizion-card-view */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78BBF50392BBE24D800849C8E0985819 /* Build configuration list for PBXNativeTarget "Pods-guizion-card-view_Example" */;
+			buildConfigurationList = 169EC18403E1A8D9ABA81F33FEDA748A /* Build configuration list for PBXNativeTarget "guizion-card-view" */;
 			buildPhases = (
-				98B6B8154D5F16D4369A8797A07EF1A6 /* Sources */,
-				21BD4C4771C2B9D8961A50D7AD9F554B /* Frameworks */,
-				FAFCF6DE9F3DB11B9D99076B3DA85C66 /* Headers */,
+				DCDFDDC35D1CD9803A8FD3F71DD6AC34 /* Sources */,
+				558D3AECA3C274B95083FCEF61811FD9 /* Frameworks */,
+				88BC97ACEEF542A2058C86E02290CD0B /* Resources */,
+				7A0E3F7E42C9073117FC5B142EE406F9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A6CDCE8906DF266A0A6E8FFA59BC9392 /* PBXTargetDependency */,
-			);
-			name = "Pods-guizion-card-view_Example";
-			productName = "Pods-guizion-card-view_Example";
-			productReference = A719BE8E73A450C40A15FECDAC36796D /* Pods_guizion_card_view_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4091593FBE3EC6E12E727F89EBEE0245 /* guizion-card-view */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4378C9AE26335130E275610B43815BCB /* Build configuration list for PBXNativeTarget "guizion-card-view" */;
-			buildPhases = (
-				F834B72FB041581B8CAAA563901C52D0 /* Sources */,
-				EFB00D19510CB5B2B213F248E59F9EB1 /* Frameworks */,
-				70F272CDADDD1B63D30A53E091170E4D /* Resources */,
-				120923586BEBF2170EDF43329E496666 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2861451B1763554915B03DDF574FD416 /* PBXTargetDependency */,
+				7CF177CCD8E6F27132C54FF26112837F /* PBXTargetDependency */,
+				B86D19F3C65E6B0589351293411CC362 /* PBXTargetDependency */,
 			);
 			name = "guizion-card-view";
 			productName = "guizion-card-view";
-			productReference = 2E264CC7B1949D047940FD79BDE1077B /* guizion_card_view.framework */;
+			productReference = 85574FBBBFA1737448B5B37D81174B89 /* guizion_card_view.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5E9E3845717B2797D0F6CC0E491ABEAB /* guizion-card-view-GuizionCardViewBundle */ = {
+		58015F2F5BA16A21A3CDCF2991527261 /* UIColor_Hex_Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61B50A23E93C9F39017FCE3708D388E5 /* Build configuration list for PBXNativeTarget "guizion-card-view-GuizionCardViewBundle" */;
+			buildConfigurationList = A50B486400B88F982EC7C5DA9D2EC14C /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
 			buildPhases = (
-				F5F399490894BDAAEDEE6AFB8FD0765B /* Sources */,
-				494265F8279F479C1BC1CE9FFB1FB1DF /* Frameworks */,
-				6690AFF0D41548077A759A6DF7DCF8D2 /* Resources */,
+				0D32599A446FCA55F984F986DD6EEB38 /* Sources */,
+				A0B87E71ED54F139646D3491ECE23865 /* Frameworks */,
+				E6876F30BDFA87DAA8535E855E62E3A1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "guizion-card-view-GuizionCardViewBundle";
-			productName = "guizion-card-view-GuizionCardViewBundle";
-			productReference = 7F073D92C3C50946A19D87857ED8502C /* GuizionCardViewBundle.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = 61214965897FABFFFF50B2BEF49AB33D /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8EA09B6F68B141E6F8422C615BF1297D /* Pods-guizion-card-view_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99C11DC092CA3F397F83989A21369DF5 /* Build configuration list for PBXNativeTarget "Pods-guizion-card-view_Example" */;
+			buildPhases = (
+				4FE9BEAE8810FD73B87ADD6C0155073C /* Sources */,
+				8E4F82EB4D41EF631268612AC1FCAF1C /* Frameworks */,
+				E3C011D5733752D9C0A412A95E04592F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFBE6282B23E46246DBCCFA693281F47 /* PBXTargetDependency */,
+				7DF4CF742EB94825847F68BC3557ED76 /* PBXTargetDependency */,
+			);
+			name = "Pods-guizion-card-view_Example";
+			productName = "Pods-guizion-card-view_Example";
+			productReference = ED3B7052BD3F2748DE8A827EA5A6212C /* Pods_guizion_card_view_Example.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		A828F6D4EB816D0013FB16DB39B1AB8C /* Pods-guizion-card-view_Tests */ = {
 			isa = PBXNativeTarget;
@@ -389,8 +490,25 @@
 			);
 			name = "Pods-guizion-card-view_Tests";
 			productName = "Pods-guizion-card-view_Tests";
-			productReference = 45C8F3309DC02A72B0788F7B2460261F /* Pods_guizion_card_view_Tests.framework */;
+			productReference = D72CA9C5C744E0993EDAF375E2D5F4A9 /* Pods_guizion_card_view_Tests.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		E095E0CBFE9E6A3A4FB6157F29ABB2DC /* guizion-card-view-GuizionCardViewBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF8AA5972748ED10623887FCD636715 /* Build configuration list for PBXNativeTarget "guizion-card-view-GuizionCardViewBundle" */;
+			buildPhases = (
+				A354E1736CCD6789466DB4C27681AAF1 /* Sources */,
+				078642470F75A89099A817DAC279026C /* Frameworks */,
+				6E8BDBEEC148417694E98EC50E1BB269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "guizion-card-view-GuizionCardViewBundle";
+			productName = "guizion-card-view-GuizionCardViewBundle";
+			productReference = 07D9E35CD1018D42D501299C19D60447 /* GuizionCardViewBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -409,44 +527,62 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 279291CC5D573E9B38E082145FD42580 /* Products */;
+			productRefGroup = 0C097DCFCBB7AD7793735DEE275A3B94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4091593FBE3EC6E12E727F89EBEE0245 /* guizion-card-view */,
-				5E9E3845717B2797D0F6CC0E491ABEAB /* guizion-card-view-GuizionCardViewBundle */,
-				09484159E02C4DD8188B22F3414CBB47 /* Pods-guizion-card-view_Example */,
+				2409A6360792722EFA2C83688DD4B220 /* guizion-card-view */,
+				E095E0CBFE9E6A3A4FB6157F29ABB2DC /* guizion-card-view-GuizionCardViewBundle */,
+				8EA09B6F68B141E6F8422C615BF1297D /* Pods-guizion-card-view_Example */,
 				A828F6D4EB816D0013FB16DB39B1AB8C /* Pods-guizion-card-view_Tests */,
+				58015F2F5BA16A21A3CDCF2991527261 /* UIColor_Hex_Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6690AFF0D41548077A759A6DF7DCF8D2 /* Resources */ = {
+		6E8BDBEEC148417694E98EC50E1BB269 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3160CEF3915D78B382BFFF026A9706 /* CardPatterns.plist in Resources */,
-				0D7726355219691E3E51B025F2A51862 /* Images.xcassets in Resources */,
+				89E0D96288FD6D7816AFC8BA273CB7AE /* CardPatterns.plist in Resources */,
+				379A03DA9FEADE56D8191D5E8CFB2776 /* data-latin.ttf in Resources */,
+				B797A9A0FFB2CADE2CF3D5B20BF44639 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70F272CDADDD1B63D30A53E091170E4D /* Resources */ = {
+		88BC97ACEEF542A2058C86E02290CD0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A323A45B3ECE620D336F26B20E237158 /* GuizionCardViewBundle.bundle in Resources */,
+				003CBC20360CC70063FB22BDC007953B /* GuizionCardViewBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		98B6B8154D5F16D4369A8797A07EF1A6 /* Sources */ = {
+		0D32599A446FCA55F984F986DD6EEB38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				856D1ECC2DC21F2836E74DA95395A94E /* Pods-guizion-card-view_Example-dummy.m in Sources */,
+				759CAFF651C5D61D1D2275F4382FFA87 /* UIColor_Hex_Swift-dummy.m in Sources */,
+				8DD662C39DB8FAC9809941B820AE7545 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FE9BEAE8810FD73B87ADD6C0155073C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3254301B95D38B73175B14328ED3416 /* Pods-guizion-card-view_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A354E1736CCD6789466DB4C27681AAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,40 +594,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5F399490894BDAAEDEE6AFB8FD0765B /* Sources */ = {
+		DCDFDDC35D1CD9803A8FD3F71DD6AC34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F834B72FB041581B8CAAA563901C52D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8EE1DE43BCA767718B2633402C87F781 /* Cards.swift in Sources */,
-				867EBDC30942227654B1A05B84100698 /* CardView.swift in Sources */,
-				AF8C964E6B51D04000EEE5D96A7041D4 /* Exceptions.swift in Sources */,
-				74C892FD7665B34CF2676711ED0A544B /* Extensions.swift in Sources */,
-				296FE23D04D9BD9E7B8E6C1D8E7B26D0 /* guizion-card-view-dummy.m in Sources */,
-				28F3BCCA5BE5E46711A0A79F78BA8760 /* ReadPatterns.swift in Sources */,
+				BCF096C547AF23A7D27322EAF0B62486 /* BackView.swift in Sources */,
+				4D068D3E43382A5C941A33A2E3012BE7 /* Cards.swift in Sources */,
+				30B03C91F3C248F4CEF624795060DC74 /* CardView.swift in Sources */,
+				CC5EAB255E9F39368868ED22435B74F4 /* Constants.swift in Sources */,
+				C6524AC12A74576B1BA998D3D888B5A9 /* Exceptions.swift in Sources */,
+				2980BC600A56DAF835E809175C3EBC2A /* Extensions.swift in Sources */,
+				66D7D866B21B54EAEE6FD0503C16A564 /* FrontView.swift in Sources */,
+				6BB9DD10EBC395BB29E8AC28EE4EBABE /* guizion-card-view-dummy.m in Sources */,
+				9BA5769F73872F305016DFD4337E012D /* ReadPatterns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2861451B1763554915B03DDF574FD416 /* PBXTargetDependency */ = {
+		7CF177CCD8E6F27132C54FF26112837F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "guizion-card-view-GuizionCardViewBundle";
-			target = 5E9E3845717B2797D0F6CC0E491ABEAB /* guizion-card-view-GuizionCardViewBundle */;
-			targetProxy = 7FDF93E79BB4CF91DEDD7FBE3907FC45 /* PBXContainerItemProxy */;
+			name = UIColor_Hex_Swift;
+			target = 58015F2F5BA16A21A3CDCF2991527261 /* UIColor_Hex_Swift */;
+			targetProxy = 7E95ACEDC11152F36F78B7E7C6E5D653 /* PBXContainerItemProxy */;
 		};
-		A6CDCE8906DF266A0A6E8FFA59BC9392 /* PBXTargetDependency */ = {
+		7DF4CF742EB94825847F68BC3557ED76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "guizion-card-view";
-			target = 4091593FBE3EC6E12E727F89EBEE0245 /* guizion-card-view */;
-			targetProxy = 1C815D7DD2F5EBA77652576EAB47C9A0 /* PBXContainerItemProxy */;
+			target = 2409A6360792722EFA2C83688DD4B220 /* guizion-card-view */;
+			targetProxy = 7334E7DD5C77C1C6E15D5EAA4E03186C /* PBXContainerItemProxy */;
+		};
+		B86D19F3C65E6B0589351293411CC362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "guizion-card-view-GuizionCardViewBundle";
+			target = E095E0CBFE9E6A3A4FB6157F29ABB2DC /* guizion-card-view-GuizionCardViewBundle */;
+			targetProxy = DB2AAD32A37BF3667CC2BEEB78492521 /* PBXContainerItemProxy */;
+		};
+		BFBE6282B23E46246DBCCFA693281F47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 58015F2F5BA16A21A3CDCF2991527261 /* UIColor_Hex_Swift */;
+			targetProxy = 74EF0D1FE74642342B291A3DB541C325 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -534,7 +678,36 @@
 			};
 			name = Release;
 		};
-		67A7AF1F258AD6065BA728D58EC3CC13 /* Release */ = {
+		2F2382A54637C15A36E6F20BB878776D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CED2C19A298C6DC242117A60611EA93 /* guizion-card-view.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/guizion-card-view/guizion-card-view-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/guizion-card-view/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/guizion-card-view/guizion-card-view.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = guizion_card_view;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		316A6928DF9238BB0880A9847287376B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CED2C19A298C6DC242117A60611EA93 /* guizion-card-view.xcconfig */;
 			buildSettings = {
@@ -548,6 +721,132 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3EFA89617F11DD69CC36B8A8CAA9B433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 861F56111AA72C4BEBFA69EB6788D563 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5278E34EC1BF8E292A68F0C13E71F179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 861F56111AA72C4BEBFA69EB6788D563 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55E3494F4882A618B0F35ECA2F7FB8C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F3E773F93B8BD2075F1CA0FDB29250 /* Pods-guizion-card-view_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-guizion-card-view_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-guizion-card-view_Example/Pods-guizion-card-view_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_guizion_card_view_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8FEAB49F101D269E77F660D24F86B3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7FF031E51E6E33843494D561B05506 /* Pods-guizion-card-view_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-guizion-card-view_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-guizion-card-view_Example/Pods-guizion-card-view_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_guizion_card_view_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -583,73 +882,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		9AB9C6C5B91F15869BE7B2C7166B58D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16F3E773F93B8BD2075F1CA0FDB29250 /* Pods-guizion-card-view_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-guizion-card-view_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-guizion-card-view_Example/Pods-guizion-card-view_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_guizion_card_view_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A28D8F64D2BF36AC6E874B8A35759C28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD7FF031E51E6E33843494D561B05506 /* Pods-guizion-card-view_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-guizion-card-view_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-guizion-card-view_Example/Pods-guizion-card-view_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_guizion_card_view_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		C921EEEE2496FD0475269BEBCDADC4A5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -726,7 +958,7 @@
 			};
 			name = Debug;
 		};
-		E88C6020DD9EF5AFB030772C3E109EF4 /* Debug */ = {
+		DA18A5922C086EA6EED4159E82C72035 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CED2C19A298C6DC242117A60611EA93 /* guizion-card-view.xcconfig */;
 			buildSettings = {
@@ -756,7 +988,7 @@
 			};
 			name = Debug;
 		};
-		F18D2B99CDB6EDF48F4EE43780C63059 /* Debug */ = {
+		E44002794101E9EEF0BA3D8BD1B64EB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CED2C19A298C6DC242117A60611EA93 /* guizion-card-view.xcconfig */;
 			buildSettings = {
@@ -773,38 +1005,18 @@
 			};
 			name = Debug;
 		};
-		FFB4F4CB900E6F620F3B33387047AA2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CED2C19A298C6DC242117A60611EA93 /* guizion-card-view.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/guizion-card-view/guizion-card-view-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/guizion-card-view/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/guizion-card-view/guizion-card-view.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = guizion_card_view;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		169EC18403E1A8D9ABA81F33FEDA748A /* Build configuration list for PBXNativeTarget "guizion-card-view" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA18A5922C086EA6EED4159E82C72035 /* Debug */,
+				2F2382A54637C15A36E6F20BB878776D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -823,29 +1035,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4378C9AE26335130E275610B43815BCB /* Build configuration list for PBXNativeTarget "guizion-card-view" */ = {
+		2FF8AA5972748ED10623887FCD636715 /* Build configuration list for PBXNativeTarget "guizion-card-view-GuizionCardViewBundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E88C6020DD9EF5AFB030772C3E109EF4 /* Debug */,
-				FFB4F4CB900E6F620F3B33387047AA2F /* Release */,
+				E44002794101E9EEF0BA3D8BD1B64EB0 /* Debug */,
+				316A6928DF9238BB0880A9847287376B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61B50A23E93C9F39017FCE3708D388E5 /* Build configuration list for PBXNativeTarget "guizion-card-view-GuizionCardViewBundle" */ = {
+		99C11DC092CA3F397F83989A21369DF5 /* Build configuration list for PBXNativeTarget "Pods-guizion-card-view_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F18D2B99CDB6EDF48F4EE43780C63059 /* Debug */,
-				67A7AF1F258AD6065BA728D58EC3CC13 /* Release */,
+				55E3494F4882A618B0F35ECA2F7FB8C9 /* Debug */,
+				8FEAB49F101D269E77F660D24F86B3B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78BBF50392BBE24D800849C8E0985819 /* Build configuration list for PBXNativeTarget "Pods-guizion-card-view_Example" */ = {
+		A50B486400B88F982EC7C5DA9D2EC14C /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9AB9C6C5B91F15869BE7B2C7166B58D5 /* Debug */,
-				A28D8F64D2BF36AC6E874B8A35759C28 /* Release */,
+				3EFA89617F11DD69CC36B8A8CAA9B433 /* Debug */,
+				5278E34EC1BF8E292A68F0C13E71F179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -21,8 +21,13 @@
   "source_files": "guizion-card-view/Classes/**/*.{c,h,hh,m,mm,swift}",
   "resource_bundles": {
     "GuizionCardViewBundle": [
-      "guizion-card-view/Assets/Images.xcassets",
+      "guizion-card-view/Assets/*",
       "guizion-card-view/Support\\ Files/*.plist"
+    ]
+  },
+  "dependencies": {
+    "UIColor_Hex_Swift": [
+      "~> 2.1"
     ]
   }
 }

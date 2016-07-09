@@ -12,6 +12,9 @@ import guizion_card_view
 class ViewController: UIViewController {
 
     @IBOutlet weak var cardView: CardView!
+    @IBOutlet weak var testFont: UILabel!
+    
+    var count = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +29,36 @@ class ViewController: UIViewController {
     }
     
     func setCreditCardNumber() {
-        cardView.updateNumber("5374267567425782")
+        let cardNumber = "5374267567425782"
+        cardView.updateNumber(cardNumber.substringToIndex(cardNumber.startIndex.advancedBy(count)))
+        
+        if count < cardNumber.characters.count {
+            count += 1
+            NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(ViewController.setCreditCardNumber), userInfo: nil, repeats: false)
+        } else {
+            count = 0
+            try! cardView.flip() {
+                self.setCreditCardCCV()
+            }
+        }
+    }
+    
+    
+    func setCreditCardCCV() {
+        let cardCCV = "123"
+        cardView.updateCCVNumber(cardCCV.substringToIndex(cardCCV.startIndex.advancedBy(count)))
+        
+        if count < cardCCV.characters.count {
+            count += 1
+            NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(ViewController.setCreditCardCCV), userInfo: nil, repeats: false)
+        } else {
+            count = 0
+            NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(ViewController.forceFlip), userInfo: nil, repeats: false)
+        }
+    }
+    
+    func forceFlip (){
+        try! cardView.flip() {}
     }
 
     override func didReceiveMemoryWarning() {
