@@ -109,6 +109,9 @@ public class CardView: UIView {
     }
     
     public func updateNumber(number: String) {
+        
+        frontView.cardNumber.text = number
+        
         let card = self.cardFormatter.verifyPattern(number)
         self.card = card ?? self.card
 
@@ -124,16 +127,27 @@ public class CardView: UIView {
             backView.image = UIImage.loadImageFromPodBundle(card.card?.backImage ?? "notrecognized_back")
             backView.ccvNumber.textColor = UIColor(rgba: card.card!.ccvColor!)
             
+            frontView.cardNumber.textColor = UIColor(rgba: card.card!.numberColor!)
+            frontView.cardName.textColor = UIColor(rgba: card.card!.nameColor!)
+            frontView.validateNumber.textColor = UIColor(rgba: card.card!.expirationColor!)
+
             bubbleAnimation() { [weak self] in
                 self?.noCardView.hidden = true
             }
         }
-        
         lastCardType = card.cardType
     }
     
     public func updateCCVNumber(number: String) {
         backView.ccvNumber.text = number
+    }
+    
+    public func updateName(name: String) {
+        frontView.cardName.text = name
+    }
+    
+    public func updateExpirationDate(date: String) {
+        frontView.validateNumber.text = date
     }
     
     func bubbleAnimation(onComplete: () -> Void) {
