@@ -4,11 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="data-latin.ttf">
-            <string>DataControl</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -30,24 +25,15 @@
                                     <constraint firstAttribute="width" constant="363" id="hOG-8c-cJB"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teste" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1T-tt-s2G">
-                                <rect key="frame" x="279" y="44" width="42" height="19"/>
-                                <fontDescription key="fontDescription" name="DataControl" family="Data Control" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XI2-lZ-ru5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4g7-8a-HQW"/>
                             <constraint firstItem="XI2-lZ-ru5" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="iFM-PE-kXc"/>
-                            <constraint firstItem="s1T-tt-s2G" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nw0-3b-1eh"/>
-                            <constraint firstItem="s1T-tt-s2G" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="vSi-SJ-lEp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardView" destination="XI2-lZ-ru5" id="QiQ-ie-3u0"/>
-                        <outlet property="testFont" destination="s1T-tt-s2G" id="hVz-01-kB3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
