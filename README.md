@@ -11,18 +11,41 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+    - Swift 2.2
+    - XCode 7.3
+
+
 ## Installation
 
 guizion-card-view is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it, add the following line to your Podfile:
 
 ```ruby
-pod "guizion-card-view"
+pod "guizion-card-view", :git => 'https://github.com/lucasmpaim/GuizionCardView.git'
 ```
+ - Copy this [font](https://github.com/lucasmpaim/GuizionCardView/blob/master/Example/guizion-card-view/data-latin.ttf?raw=true) to your project
+ - Add the following to your Info.plist file.
+
+```xml
+<key>UIAppFonts</key>
+<array>
+    <string>data-latin.ttf</string>
+</array>
+```
+
+## Usage
+
+ - Add a UIView to your ViewController
+ - Set the class to CardView
+ - Add the inputs, this library does not add the inputs so that you have all the control of your app layout
+ - Call the ```updateNumber(_: String)```, ```updateCCVNumber(_: String)```, ```updateName(_: String)```, ```updateExpirationDate(_: String)``` and ```flip(onComplete: () -> Void)``` functions
+
+## Docs
+ - Under development
 
 ## Author
 
-Lucas, lucasmpaim1@gmail.com
+Lucas Mrowskovsky Paim, lucasmpaim1@gmail.com
 
 ## License
 
