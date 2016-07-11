@@ -28,7 +28,7 @@ public class CardView: UIView {
     private let cardFormatter = CardNumberFormatter()
     private var lastCardType = CardTypes.None
     
-    private var state: State = .Front
+    public var state: State = .Front
     
     /**
      Retrive the card type
