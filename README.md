@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/guizion-card-view.svg?style=flat)](http://cocoapods.org/pods/guizion-card-view)
 [![Platform](https://img.shields.io/cocoapods/p/guizion-card-view.svg?style=flat)](http://cocoapods.org/pods/guizion-card-view)
 
+
+![usage-gif](https://github.com/lucasmpaim/GuizionCardView/blob/master/Images/usage-gif.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
