@@ -16,7 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
     - Swift 2.2
     - XCode 7.3
-
+    - iOS 8.0
 
 ## Installation
 
