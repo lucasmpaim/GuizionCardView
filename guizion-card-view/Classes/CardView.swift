@@ -14,35 +14,35 @@ import UIColor_Hex_Swift
  - Author: Guizion Labs
  - Version: 1.0
  */
-public class CardView: UIView {
+open class CardView: UIView {
     
     public enum State {
-        case Front
-        case Back
+        case front
+        case back
     }
     
-    private var frontView = CardFrontView()
-    private var backView = CardBackView()
+    fileprivate var frontView = CardFrontView()
+    fileprivate var backView = CardBackView()
     
-    private let noCardView = UIImageView(image: UIImage.loadImageFromPodBundle("no_card"))
-    private let cardFormatter = CardNumberFormatter()
-    private var lastCardType = CardTypes.None
+    fileprivate let noCardView = UIImageView(image: UIImage.loadImageFromPodBundle("no_card"))
+    fileprivate let cardFormatter = CardNumberFormatter()
+    fileprivate var lastCardType = CardTypes.None
     
-    public var state: State = .Front
+    open var state: State = .front
     
     /**
      Retrive the card type
      - SeeAlso: `CardTypes`
      */
-    public var card: CreditCard = CreditCard()
+    open var card: CreditCard = CreditCard()
     
-    public var bundleAnimationDuration = 2.5
-    public var flipAnimationDuration = 1
+    open var bundleAnimationDuration = 2.5
+    open var flipAnimationDuration = 1
     
-    public override func layoutSubviews() {
-        noCardView.frame = CGRectMake(0, 0, self.frame.width, self.frame.height)
-        frontView.frame = CGRectMake(0, 0, self.frame.width, self.frame.height)
-        backView.frame = CGRectMake(0, 0, self.frame.width, self.frame.height)
+    open override func layoutSubviews() {
+        noCardView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        frontView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        backView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
     }
     
     override init(frame: CGRect) {
@@ -80,31 +80,31 @@ public class CardView: UIView {
      }
      ```
      */
-    public func flip(onComplete: () -> Void) throws {
+    open func flip(_ onComplete: @escaping () -> Void) throws {
         
         if frontView.image == nil || backView.image == nil {
-            throw CreditCardErrors.NumberNotProvided
+            throw CreditCardErrors.numberNotProvided
         }
         
         let transitionOptions: UIViewAnimationOptions
         var views : (frontView: UIView, backView: UIView)
         
-        if state == .Front {
+        if state == .front {
             views = (frontView: frontView, backView: backView)
-            transitionOptions = UIViewAnimationOptions.TransitionFlipFromRight
+            transitionOptions = UIViewAnimationOptions.transitionFlipFromRight
         } else {
             views = (frontView: backView, backView: frontView)
-            transitionOptions = UIViewAnimationOptions.TransitionFlipFromLeft
+            transitionOptions = UIViewAnimationOptions.transitionFlipFromLeft
         }
         
         
-        UIView.transitionFromView(views.frontView,
-                                  toView: views.backView,
+        UIView.transition(from: views.frontView,
+                                  to: views.backView,
                                   duration: 1,
                                   options: transitionOptions,
                                   completion: { [weak self] _ in
                                     
-                                    self?.state = self?.state == .Front ? .Back : .Front
+                                    self?.state = self?.state == .front ? .back : .front
                                     
                                     onComplete()
                                     
@@ -112,7 +112,7 @@ public class CardView: UIView {
         
     }
     
-    public func updateNumber(number: String) {
+    open func updateNumber(_ number: String) {
         
         frontView.cardNumber.text = number
         
@@ -122,7 +122,7 @@ public class CardView: UIView {
         if card.cardType == .None {
             frontView.image = nil
             backView.image = nil
-            noCardView.hidden = false
+            noCardView.isHidden = false
             
             frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
             frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
@@ -141,31 +141,31 @@ public class CardView: UIView {
             frontView.validateNumber.textColor = UIColor(rgba: card.card?.expirationColor ?? "#656565")
 
             bubbleAnimation() { [weak self] in
-                self?.noCardView.hidden = true
+                self?.noCardView.isHidden = true
             }
         }
         lastCardType = card.cardType
     }
     
-    public func updateCCVNumber(number: String) {
+    open func updateCCVNumber(_ number: String) {
         backView.ccvNumber.text = number
     }
     
-    public func updateName(name: String) {
+    open func updateName(_ name: String) {
         frontView.cardName.text = name
     }
     
-    public func updateExpirationDate(date: String) {
+    open func updateExpirationDate(_ date: String) {
         frontView.validateNumber.text = date
     }
     
-    func bubbleAnimation(onComplete: () -> Void) {
+    func bubbleAnimation(_ onComplete: @escaping () -> Void) {
         let maskLayer = CAShapeLayer()
-        let maskRect = CGRectMake(-25, bounds.maxY - 25, 50, 50);
-        let path = CGPathCreateWithEllipseInRect(maskRect, nil)
+        let maskRect = CGRect(x: -25, y: bounds.maxY - 25, width: 50, height: 50);
+        let path = CGPath(ellipseIn: maskRect, transform: nil)
         
-        let finalRect = CGRectMake(-bounds.width*2, bounds.maxY - bounds.height*2, bounds.width * 4, bounds.height * 4)
-        let finalPath = CGPathCreateWithEllipseInRect(finalRect, nil)
+        let finalRect = CGRect(x: -bounds.width*2, y: bounds.maxY - bounds.height*2, width: bounds.width * 4, height: bounds.height * 4)
+        let finalPath = CGPath(ellipseIn: finalRect, transform: nil)
         maskLayer.path = path
         
         frontView.layer.mask = maskLayer
@@ -181,9 +181,9 @@ public class CardView: UIView {
         anim.fromValue = maskLayer.path
         anim.toValue = finalPath
         anim.duration = 2.5
-        anim.removedOnCompletion = true
+        anim.isRemovedOnCompletion = true
         anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        maskLayer.addAnimation(anim, forKey: nil)
+        maskLayer.add(anim, forKey: nil)
         
         maskLayer.path = finalPath
         CATransaction.commit()

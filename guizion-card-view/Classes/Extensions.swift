@@ -10,11 +10,11 @@ import Foundation
 
 
 extension UIImage {
-    static func loadImageFromPodBundle(imageName: String) -> UIImage? {
-        let podBundle = NSBundle(forClass: CardView.self)
-        if let url = podBundle.URLForResource("GuizionCardViewBundle", withExtension: "bundle") {
-            let bundle = NSBundle(URL: url)
-            return UIImage(named: imageName, inBundle: bundle, compatibleWithTraitCollection: nil)
+    static func loadImageFromPodBundle(_ imageName: String) -> UIImage? {
+        let podBundle = Bundle(for: CardView.self)
+        if let url = podBundle.url(forResource: "GuizionCardViewBundle", withExtension: "bundle") {
+            let bundle = Bundle(url: url)
+            return UIImage(named: imageName, in: bundle, compatibleWith: nil)
         }
         return nil
     }

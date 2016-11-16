@@ -10,12 +10,12 @@ import Foundation
 
 
 
-enum CreditCardErrors: ErrorType {
+enum CreditCardErrors: Error {
     
     /**
      This error may be throw when the credit card number not provided
      */
-    case NumberNotProvided
+    case numberNotProvided
     
 }
 

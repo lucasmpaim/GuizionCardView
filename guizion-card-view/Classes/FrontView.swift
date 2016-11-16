@@ -44,7 +44,7 @@ class CardFrontView: UIImageView {
     }
 
     override func layoutSubviews() {
-        func calculateCardLabelPos(originalY: CGFloat, originalX: CGFloat) -> (x: CGFloat, y: CGFloat) {
+        func calculateCardLabelPos(_ originalY: CGFloat, originalX: CGFloat) -> (x: CGFloat, y: CGFloat) {
             let yPos = (self.frame.height * originalY)/207
             let xPos = (self.frame.width * originalX)/343
             return (x: xPos, y: yPos)

@@ -23,20 +23,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(ViewController.setCreditCardNumber), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(ViewController.setCreditCardNumber), userInfo: nil, repeats: false)
         
     }
     
     func setCreditCardNumber() {
         let cardNumber = "5374 2675 6742 5782"
-        cardView.updateNumber(cardNumber.substringToIndex(cardNumber.startIndex.advancedBy(count)))
+        cardView.updateNumber(cardNumber.substring(to: cardNumber.characters.index(cardNumber.startIndex, offsetBy: count)))
         
         if count < cardNumber.characters.count {
             count += 1
-            NSTimer.scheduledTimerWithTimeInterval(tappingTime, target: self, selector: #selector(ViewController.setCreditCardNumber), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: tappingTime, target: self, selector: #selector(ViewController.setCreditCardNumber), userInfo: nil, repeats: false)
         } else {
             count = 0
             self.setCreditCardName()
@@ -46,11 +46,11 @@ class ViewController: UIViewController {
     
     func setCreditCardName() {
         let cardName = "LUCAS M PAIM"
-        cardView.updateName(cardName.substringToIndex(cardName.startIndex.advancedBy(count)))
+        cardView.updateName(cardName.substring(to: cardName.characters.index(cardName.startIndex, offsetBy: count)))
         
         if count < cardName.characters.count {
             count += 1
-            NSTimer.scheduledTimerWithTimeInterval(tappingTime, target: self, selector: #selector(ViewController.setCreditCardName), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: tappingTime, target: self, selector: #selector(ViewController.setCreditCardName), userInfo: nil, repeats: false)
         } else {
             count = 0
             self.setCreditValidate()
@@ -60,14 +60,14 @@ class ViewController: UIViewController {
     
     func setCreditValidate() {
         let expirationDate = "12/18"
-        cardView.updateExpirationDate(expirationDate.substringToIndex(expirationDate.startIndex.advancedBy(count)))
+        cardView.updateExpirationDate(expirationDate.substring(to: expirationDate.characters.index(expirationDate.startIndex, offsetBy: count)))
         
         if count < expirationDate.characters.count {
             count += 1
-            NSTimer.scheduledTimerWithTimeInterval(tappingTime, target: self, selector: #selector(ViewController.setCreditValidate), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: tappingTime, target: self, selector: #selector(ViewController.setCreditValidate), userInfo: nil, repeats: false)
         } else {
             count = 0
-            NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.flipAndSetCCV), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.flipAndSetCCV), userInfo: nil, repeats: false)
         }
         
     }
@@ -81,14 +81,14 @@ class ViewController: UIViewController {
     
     func setCreditCardCCV() {
         let cardCCV = "123"
-        cardView.updateCCVNumber(cardCCV.substringToIndex(cardCCV.startIndex.advancedBy(count)))
+        cardView.updateCCVNumber(cardCCV.substring(to: cardCCV.characters.index(cardCCV.startIndex, offsetBy: count)))
         
         if count < cardCCV.characters.count {
             count += 1
-            NSTimer.scheduledTimerWithTimeInterval(tappingTime, target: self, selector: #selector(ViewController.setCreditCardCCV), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: tappingTime, target: self, selector: #selector(ViewController.setCreditCardCCV), userInfo: nil, repeats: false)
         } else {
             count = 0
-            NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(ViewController.forceFlip), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(ViewController.forceFlip), userInfo: nil, repeats: false)
         }
     }
     

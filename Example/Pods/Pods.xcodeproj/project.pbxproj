@@ -34,6 +34,7 @@
 		D4724C6D1D70F154F00DCDCCC56855CD /* guizion-card-view-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3B3FE402AB5CECE3D8B740916C4EB2 /* guizion-card-view-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA9223BC70DFDB26BE790221ED234A29 /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7718B32BFBDE57CE0537DD8D322FF4E /* UIColor_Hex_Swift.framework */; };
 		E2E0D1BEA2837231A35B245D66EFE19A /* Pods-guizion-card-view_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E03134C77EE8C3224800224AB082F28 /* Pods-guizion-card-view_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2CC05711DDC99D7004BE6BD /* CardPatterns.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90CE5BB1BAD80E9081F4E7DF53E5978F /* CardPatterns.plist */; };
 		F62550B243204E64648A0140F9925E1E /* Pods-guizion-card-view_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5554ED5EC7FB5C7603A915059537B97 /* Pods-guizion-card-view_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -518,6 +519,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2409A6360792722EFA2C83688DD4B220 = {
+						LastSwiftMigration = 0810;
+					};
+					58015F2F5BA16A21A3CDCF2991527261 = {
+						LastSwiftMigration = 0810;
+					};
+					8EA09B6F68B141E6F8422C615BF1297D = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -556,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003CBC20360CC70063FB22BDC007953B /* GuizionCardViewBundle.bundle in Resources */,
+				F2CC05711DDC99D7004BE6BD /* CardPatterns.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +714,7 @@
 				PRODUCT_NAME = guizion_card_view;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -748,6 +762,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -777,6 +792,7 @@
 				PRODUCT_NAME = UIColor_Hex_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -811,6 +827,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -844,6 +861,7 @@
 				PRODUCT_NAME = Pods_guizion_card_view_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -982,6 +1000,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

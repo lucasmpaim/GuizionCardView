@@ -50,7 +50,7 @@ public struct CardInfo {
     var ccvColor: String?
     
     init(dictionary: Dictionary<String, String>) {
-        self.pattern = try! NSRegularExpression(pattern: dictionary["pattern"]!, options: [.CaseInsensitive])
+        self.pattern = try! NSRegularExpression(pattern: dictionary["pattern"]!, options: [.caseInsensitive])
         self.frontImage = dictionary["imageFront"]
         self.backImage = dictionary["imageBack"]
         self.name = dictionary["companyName"]
