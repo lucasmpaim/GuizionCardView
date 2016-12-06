@@ -43,7 +43,7 @@ class CardBackView: UIImageView {
         let xPos = (self.frame.width * 280)/343
         let yPos = (self.frame.height * 99)/207
         
-        ccvNumber.frame = CGRect(x: xPos, y: yPos, width: 29, height: 18)
+        ccvNumber.frame = CGRect(x: xPos, y: yPos, width: 50, height: 18)
     }
     
 }
