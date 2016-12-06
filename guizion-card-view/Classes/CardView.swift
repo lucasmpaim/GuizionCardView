@@ -72,7 +72,7 @@ open class CardView: UIView {
      
      ```
      do{
-        try self.flip()
+     try self.flip()
      } catch CreditCardErrors.NumberNotProvided {
      
      } catch _ {
@@ -99,26 +99,38 @@ open class CardView: UIView {
         
         
         UIView.transition(from: views.frontView,
-                                  to: views.backView,
-                                  duration: 1,
-                                  options: transitionOptions,
-                                  completion: { [weak self] _ in
-                                    
-                                    self?.state = self?.state == .front ? .back : .front
-                                    
-                                    onComplete()
-                                    
+                          to: views.backView,
+                          duration: 1,
+                          options: transitionOptions,
+                          completion: { [weak self] _ in
+                            
+                            self?.state = self?.state == .front ? .back : .front
+                            
+                            onComplete()
+                            
         })
         
     }
     
     open func updateNumber(_ number: String) {
         
+        
         frontView.cardNumber.text = number
+        
+        if number.isEmpty {
+            lastCardType = .None
+            frontView.image = nil
+            backView.image = nil
+            noCardView.isHidden = false
+            frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
+            frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
+            frontView.validateNumber.textColor = UIColor(rgba: "#D4D4D4")
+            return
+        }
         
         let card = self.cardFormatter.verifyPattern(number)
         self.card = card ?? self.card
-
+        
         if card.cardType == .None {
             frontView.image = nil
             backView.image = nil
@@ -127,9 +139,6 @@ open class CardView: UIView {
             frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
             frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
             frontView.validateNumber.textColor = UIColor(rgba: "#D4D4D4")
-
-            
-            return
         }
         
         if card.cardType != lastCardType {
@@ -139,9 +148,11 @@ open class CardView: UIView {
             frontView.cardNumber.textColor = UIColor(rgba: card.card?.numberColor ?? "#434343")
             frontView.cardName.textColor = UIColor(rgba: card.card?.nameColor ?? "#656565")
             frontView.validateNumber.textColor = UIColor(rgba: card.card?.expirationColor ?? "#656565")
-
+            
             bubbleAnimation() { [weak self] in
-                self?.noCardView.isHidden = true
+                if self?.frontView.image != .none {
+                    self?.noCardView.isHidden = true
+                }
             }
         }
         lastCardType = card.cardType
