@@ -38,7 +38,7 @@ class CardFrontView: UIImageView {
         self.addSubview(cardNumber)
         self.addSubview(cardName)
         self.addSubview(validateNumber)
-        cardNumber.font = UIFont(name: Constants.fontName, size: 20.0)
+        cardNumber.font = UIFont(name: Constants.fontName, size: 22.0)
         validateNumber.font = UIFont(name: Constants.fontName, size: 14.0)
         cardName.font = UIFont(name: Constants.fontName, size: 14.0)
     }
