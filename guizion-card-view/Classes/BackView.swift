@@ -34,7 +34,7 @@ class CardBackView: UIImageView {
     
     func setupViews() {
         self.addSubview(ccvNumber)
-        ccvNumber.font = UIFont(name: Constants.fontName, size: 15.0)
+        ccvNumber.font = UIFont(name: Constants.fontName, size: 13.0)
     }
     
     override func layoutSubviews() {
