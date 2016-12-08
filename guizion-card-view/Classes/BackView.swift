@@ -40,7 +40,7 @@ class CardBackView: UIImageView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        let xPos = (self.frame.width * 280)/343
+        let xPos = ((self.frame.width * 280)/343) - 15
         let yPos = (self.frame.height * 99)/207
         
         ccvNumber.frame = CGRect(x: xPos, y: yPos, width: 50, height: 18)
