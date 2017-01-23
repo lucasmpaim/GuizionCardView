@@ -60,9 +60,9 @@ open class CardView: UIView {
         self.addSubview(noCardView)
         self.addSubview(frontView)
         
-        frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
-        frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
-        frontView.validateNumber.textColor = UIColor(rgba: "#D4D4D4")
+        frontView.cardNumber.textColor = UIColor("#D7D7D7")
+        frontView.cardName.textColor = UIColor("#D4D4D4")
+        frontView.validateNumber.textColor = UIColor("#D4D4D4")
     }
     
     /**
@@ -122,9 +122,9 @@ open class CardView: UIView {
             frontView.image = nil
             backView.image = nil
             //noCardView.isHidden = false
-            frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
-            frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
-            frontView.validateNumber.textColor = UIColor(rgba: "#D4D4D4")
+            frontView.cardNumber.textColor = UIColor("#D7D7D7")
+            frontView.cardName.textColor = UIColor("#D4D4D4")
+            frontView.validateNumber.textColor = UIColor("#D4D4D4")
             return
         }
         
@@ -136,9 +136,9 @@ open class CardView: UIView {
             backView.image = nil
             //noCardView.isHidden = false
             
-            frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
-            frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
-            frontView.validateNumber.textColor = UIColor(rgba: "#D4D4D4")
+            frontView.cardNumber.textColor = UIColor("#D7D7D7")
+            frontView.cardName.textColor = UIColor("#D4D4D4")
+            frontView.validateNumber.textColor = UIColor("#D4D4D4")
         }
         
         if card.cardType != lastCardType {
