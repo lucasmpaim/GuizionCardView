@@ -31,10 +31,10 @@ class ViewController: UIViewController {
     }
     
     func setCreditCardNumber() {
-        let cardNumber = "5374 2675 6742 5782"
-        cardView.updateNumber(cardNumber.substring(to: cardNumber.characters.index(cardNumber.startIndex, offsetBy: count)))
+        let cardNumber = "5374267567425782"
+        cardView.updateNumber(cardNumber.substring(to: cardNumber.index(cardNumber.startIndex, offsetBy: count)))
         
-        if count < cardNumber.characters.count {
+        if count < cardNumber.count {
             count += 1
             Timer.scheduledTimer(timeInterval: tappingTime, target: self, selector: #selector(ViewController.setCreditCardNumber), userInfo: nil, repeats: false)
         } else {
@@ -46,9 +46,9 @@ class ViewController: UIViewController {
     
     func setCreditCardName() {
         let cardName = "LUCAS M PAIM"
-        cardView.updateName(cardName.substring(to: cardName.characters.index(cardName.startIndex, offsetBy: count)))
+        cardView.updateName(cardName.substring(to: cardName.index(cardName.startIndex, offsetBy: count)))
         
-        if count < cardName.characters.count {
+        if count < cardName.count {
             count += 1
             Timer.scheduledTimer(timeInterval: tappingTime, target: self, selector: #selector(ViewController.setCreditCardName), userInfo: nil, repeats: false)
         } else {
@@ -60,9 +60,9 @@ class ViewController: UIViewController {
     
     func setCreditValidate() {
         let expirationDate = "12/18"
-        cardView.updateExpirationDate(expirationDate.substring(to: expirationDate.characters.index(expirationDate.startIndex, offsetBy: count)))
+        cardView.updateExpirationDate(expirationDate.substring(to: expirationDate.index(expirationDate.startIndex, offsetBy: count)))
         
-        if count < expirationDate.characters.count {
+        if count < expirationDate.count {
             count += 1
             Timer.scheduledTimer(timeInterval: tappingTime, target: self, selector: #selector(ViewController.setCreditValidate), userInfo: nil, repeats: false)
         } else {
@@ -81,9 +81,9 @@ class ViewController: UIViewController {
     
     func setCreditCardCCV() {
         let cardCCV = "123"
-        cardView.updateCCVNumber(cardCCV.substring(to: cardCCV.characters.index(cardCCV.startIndex, offsetBy: count)))
+        cardView.updateCCVNumber(cardCCV.substring(to: cardCCV.index(cardCCV.startIndex, offsetBy: count)))
         
-        if count < cardCCV.characters.count {
+        if count < cardCCV.count {
             count += 1
             Timer.scheduledTimer(timeInterval: tappingTime, target: self, selector: #selector(ViewController.setCreditCardCCV), userInfo: nil, repeats: false)
         } else {

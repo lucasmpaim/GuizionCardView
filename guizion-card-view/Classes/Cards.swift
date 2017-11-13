@@ -44,6 +44,8 @@ public struct CardInfo {
     var name: String?
     var group: String?
     
+    var mask: String?
+    
     var numberColor: String?
     var nameColor: String?
     var expirationColor: String?
@@ -55,6 +57,17 @@ public struct CardInfo {
         self.backImage = dictionary["imageBack"]
         self.name = dictionary["companyName"]
         self.group = dictionary["numberGrouping"]
+        
+        if let groupMask = group {
+            let groups = groupMask.split(separator: ",")
+            var mask = ""
+            groups.forEach {
+                let groupSize = Int($0)!
+                for _ in 0..<groupSize {mask += "#"}
+                mask += " "
+            }
+            self.mask = mask
+        }
         
         self.numberColor = dictionary["numberColor"]
         self.nameColor = dictionary["nameColor"]

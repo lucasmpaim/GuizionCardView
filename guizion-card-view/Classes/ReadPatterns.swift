@@ -29,7 +29,7 @@ class CardNumberFormatter {
     }
     
     func patternMatchesWithNumberString(_ number: String, pattern: NSRegularExpression) -> Bool {
-        let numberOfMatches = pattern.numberOfMatches(in: number, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, number.characters.count))
+        let numberOfMatches = pattern.numberOfMatches(in: number, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, number.count))
         return numberOfMatches > 0
     }
 
@@ -51,7 +51,7 @@ class CardNumberFormatter {
             }
         }
         
-        return number.characters.count < 4 ? CreditCard() : CreditCard(type: CardTypes.NotRecognized)
+        return number.count < 4 ? CreditCard() : CreditCard(type: CardTypes.NotRecognized)
     }
 }
 

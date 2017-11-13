@@ -60,9 +60,9 @@ open class CardView: UIView {
         self.addSubview(noCardView)
         self.addSubview(frontView)
         
-        frontView.cardNumber.textColor = UIColor("#D7D7D7")
-        frontView.cardName.textColor = UIColor("#D4D4D4")
-        frontView.validateNumber.textColor = UIColor("#D4D4D4")
+        frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
+        frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
+        frontView.validateNumber.textColor = UIColor(rgba: "#D4D4D4")
     }
     
     /**
@@ -121,40 +121,37 @@ open class CardView: UIView {
             lastCardType = .None
             frontView.image = nil
             backView.image = nil
-            //noCardView.isHidden = false
-            frontView.cardNumber.textColor = UIColor("#D7D7D7")
-            frontView.cardName.textColor = UIColor("#D4D4D4")
-            frontView.validateNumber.textColor = UIColor("#D4D4D4")
+            frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
+            frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
+            frontView.validateNumber.textColor = UIColor(rgba: "#D4D4D4")
             return
         }
         
         let card = self.cardFormatter.verifyPattern(number)
-        self.card = card ?? self.card
+        self.card = card
         
         if card.cardType == .None {
             frontView.image = nil
             backView.image = nil
-            //noCardView.isHidden = false
             
-            frontView.cardNumber.textColor = UIColor("#D7D7D7")
-            frontView.cardName.textColor = UIColor("#D4D4D4")
-            frontView.validateNumber.textColor = UIColor("#D4D4D4")
+            frontView.cardNumber.textColor = UIColor(rgba: "#D7D7D7")
+            frontView.cardName.textColor = UIColor(rgba: "#D4D4D4")
+            frontView.validateNumber.textColor = UIColor(rgba: "#D4D4D4")
         }
         
         if card.cardType != lastCardType {
             frontView.image = UIImage.loadImageFromPodBundle(card.card?.frontImage ?? "notrecognized_front")
             backView.image = UIImage.loadImageFromPodBundle(card.card?.backImage ?? "notrecognized_back")
-            backView.ccvNumber.textColor = UIColor(card.card?.ccvColor ?? "#4B4B4B")
-            frontView.cardNumber.textColor = UIColor(card.card?.numberColor ?? "#434343")
-            frontView.cardName.textColor = UIColor(card.card?.nameColor ?? "#656565")
-            frontView.validateNumber.textColor = UIColor(card.card?.expirationColor ?? "#656565")
+            backView.ccvNumber.textColor = UIColor(rgba: card.card?.ccvColor ?? "#4B4B4B")
+            frontView.cardNumber.textColor = UIColor(rgba: card.card?.numberColor ?? "#434343")
+            frontView.cardName.textColor = UIColor(rgba: card.card?.nameColor ?? "#656565")
+            frontView.validateNumber.textColor = UIColor(rgba: card.card?.expirationColor ?? "#656565")
             
-            bubbleAnimation() { [weak self] in
-//                if self?.frontView.image != .none {
-//                    self?.noCardView.isHidden = true
-//                }
-            }
+            frontView.cardNumber.textMask = card.card?.mask ?? "#### #### #### ####"
+            
+            bubbleAnimation() { }
         }
+        
         lastCardType = card.cardType
     }
     

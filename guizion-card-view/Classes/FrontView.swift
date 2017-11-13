@@ -10,7 +10,7 @@ import Foundation
 
 class CardFrontView: UIImageView {
 
-    let cardNumber = UILabel()
+    let cardNumber = MaskLabel()
     let cardName = UILabel()
     let validateNumber = UILabel()
     
