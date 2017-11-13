@@ -37,6 +37,7 @@
 		F2CC05711DDC99D7004BE6BD /* CardPatterns.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90CE5BB1BAD80E9081F4E7DF53E5978F /* CardPatterns.plist */; };
 		F2F541151FBA030C004C257E /* MaskLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F541141FBA030C004C257E /* MaskLabel.swift */; };
 		F2F541171FBA0634004C257E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F541161FBA0634004C257E /* StringExtension.swift */; };
+		F2F5411A1FBA118A004C257E /* ColorString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F541191FBA118A004C257E /* ColorString.swift */; };
 		F62550B243204E64648A0140F9925E1E /* Pods-guizion-card-view_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5554ED5EC7FB5C7603A915059537B97 /* Pods-guizion-card-view_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +128,7 @@
 		EFD61F1D0D3C1DADAC067320DE74A048 /* guizion-card-view.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "guizion-card-view.modulemap"; sourceTree = "<group>"; };
 		F2F541141FBA030C004C257E /* MaskLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskLabel.swift; sourceTree = "<group>"; };
 		F2F541161FBA0634004C257E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		F2F541191FBA118A004C257E /* ColorString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorString.swift; sourceTree = "<group>"; };
 		FE4A0BC6CC7720E4E9B9132A0B1C9457 /* Pods-guizion-card-view_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-guizion-card-view_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FFEDDF274911886BB87DBE335387A97C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -288,6 +290,7 @@
 				E0F8B829C84192461E01BFC43EE68188 /* ReadPatterns.swift */,
 				F2F541141FBA030C004C257E /* MaskLabel.swift */,
 				F2F541161FBA0634004C257E /* StringExtension.swift */,
+				F2F541191FBA118A004C257E /* ColorString.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -623,6 +626,7 @@
 				CC5EAB255E9F39368868ED22435B74F4 /* Constants.swift in Sources */,
 				C6524AC12A74576B1BA998D3D888B5A9 /* Exceptions.swift in Sources */,
 				2980BC600A56DAF835E809175C3EBC2A /* Extensions.swift in Sources */,
+				F2F5411A1FBA118A004C257E /* ColorString.swift in Sources */,
 				F2F541151FBA030C004C257E /* MaskLabel.swift in Sources */,
 				66D7D866B21B54EAEE6FD0503C16A564 /* FrontView.swift in Sources */,
 				6BB9DD10EBC395BB29E8AC28EE4EBABE /* guizion-card-view-dummy.m in Sources */,
